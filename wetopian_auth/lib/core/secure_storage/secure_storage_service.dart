@@ -1,12 +1,9 @@
-// lib/core/secure_storage_service.dart
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:injectable/injectable.dart';
 
 @lazySingleton
 class SecureStorageService {
   final FlutterSecureStorage _storage = const FlutterSecureStorage();
-
-  // keys
   static const _kAccessToken = 'access_token';
   static const _kRefreshToken = 'refresh_token';
   static const _kUserJson = 'user_json';

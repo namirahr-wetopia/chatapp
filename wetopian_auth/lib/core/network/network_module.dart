@@ -1,4 +1,3 @@
-// lib/core/network_module.dart
 import 'package:injectable/injectable.dart';
 import 'package:http/http.dart' as http;
 
