@@ -1,0 +1,23 @@
+class VerifyContactCommand {
+  final String userName;
+  final String otp;
+
+  VerifyContactCommand({
+    required this.userName,
+    required this.otp,
+  });
+
+  Map<String, dynamic> toQueryParameters() {
+    return {
+      'userName': userName,
+      'otp': otp,
+    };
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'userName': userName,
+      'otp': otp,
+    };
+  }
+}
